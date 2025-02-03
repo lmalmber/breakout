@@ -2,7 +2,7 @@
 
 Breakout implemented in TypeScript using Canvas API.
 
-View demo here:
+View demo [here](https://lmalmber.github.io/breakout/).
 
 ## Setup
 
