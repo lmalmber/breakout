@@ -11,4 +11,10 @@ View demo [here](https://lmalmber.github.io/breakout/).
 
 ## Architecture
 
+### Engine
+![engine](https://raw.githubusercontent.com/lmalmber/breakout/master/docs/engine.PNG)
+
+### Game
+![game](https://raw.githubusercontent.com/lmalmber/breakout/master/docs/game.PNG)
+
 ## Screenshot
