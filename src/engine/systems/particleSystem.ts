@@ -61,12 +61,8 @@ class ParticleSystem extends Entity {
                 return
             }
 
-            graphics.context.beginPath()
-            graphics.context.moveTo(transform.position.x, transform.position.y)
-            graphics.context.rect(transform.position.x, transform.position.y,
-                particle.size, particle.size)
-            graphics.context.fillStyle = particle.color
-            graphics.context.fill()
+            graphics.drawRect(transform.position.x, transform.position.y,
+                particle.size, particle.size, particle.color)
         })
     }
 }
