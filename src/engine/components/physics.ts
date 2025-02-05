@@ -19,17 +19,17 @@ class Physics extends Component {
 
     constructor(entity: Entity, config?: PhysicsConfig) {
         super(entity, 'physics')
-        this.velocity = structuredClone(config?.velocity) ?? new Vector2(0, 0)
-        this.acceleration = structuredClone(config?.acceleration) ?? new Vector2(0, 0)
+        this.velocity = Object.assign(new Vector2(), config?.velocity)
+        this.acceleration = Object.assign(new Vector2(), config?.acceleration)
         this.damping = config?.damping ?? 1
     }
 
-    initialize(): void {
+    initialize() {
         super.initialize()
         this.transform = this.entity.getComponent<Transform>(TransformType)
     }
 
-    update(deltaTime: number): void {
+    update(deltaTime: number) {
         if (!this.transform) {
             return
         }

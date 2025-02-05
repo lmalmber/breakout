@@ -13,7 +13,7 @@ class BallGraphics extends Component {
 
     constructor(entity: Entity, size: Vector2) {
         super(entity, 'ballGraphics')
-        this.size = structuredClone(size)
+        this.size = Object.assign(new Vector2(), size)
     }
 
     initialize() {

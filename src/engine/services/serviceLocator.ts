@@ -13,7 +13,7 @@ class ServiceLocator {
         ServiceLocator._graphics = graphics
     }
 
-    static getGraphics(): Graphics {
+    static getGraphics() {
         return ServiceLocator._graphics
     }
 
@@ -21,7 +21,7 @@ class ServiceLocator {
         ServiceLocator._input = input
     }
 
-    static getInput(): Input {
+    static getInput() {
         return ServiceLocator._input
     }
 
@@ -29,7 +29,7 @@ class ServiceLocator {
         ServiceLocator._events = events
     }
 
-    static getEvents(): EventBus {
+    static getEvents() {
         return ServiceLocator._events
     }
 }

@@ -17,9 +17,9 @@ class Transform extends Component {
 
     constructor(entity: Entity, config?: TransformConfig) {
         super(entity, 'transform')
-        this.position = structuredClone(config?.position) ?? new Vector2(0, 0)
+        this.position = Object.assign(new Vector2(), config?.position)
         this.rotation = config?.rotation ?? 0
-        this.scale = structuredClone(config?.scale) ?? new Vector2(1, 1)
+        this.scale = Object.assign(new Vector2(1, 1), config?.scale)
     }
 }
 

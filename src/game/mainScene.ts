@@ -6,7 +6,7 @@ import BlockContainer from '@/game/blockContainer'
 import ServiceLocator from '@/engine/services/serviceLocator'
 import { colors } from '@/game/constants/colors'
 import ParticleSystem from '@/engine/systems/particleSystem'
-import BackgroundEffect from './backgroundEffect'
+import BackgroundEffect from '@/game/backgroundEffect'
 
 class MainScene extends Scene {
     private state: GameState
@@ -36,7 +36,6 @@ class MainScene extends Scene {
             this.state.enter(this)
         }
     }
-
 }
 
 export default MainScene

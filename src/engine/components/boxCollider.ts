@@ -10,7 +10,7 @@ class BoxCollider extends Component {
 
     constructor(entity: Entity, size: Vector2) {
         super(entity, 'boxCollider')
-        this.size = structuredClone(size)
+        this.size = Object.assign(new Vector2(), size)
     }
 
     intersects(other: BoxCollider) {

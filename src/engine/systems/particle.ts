@@ -31,7 +31,7 @@ class Particle extends Entity {
     configure(config: ParticleConfig = {}) {
         const transform = this.getComponent<Transform>(TransformType)
         if (transform) {
-            transform.position = structuredClone(config.position) ?? new Vector2()
+            transform.position = Object.assign(new Vector2(), config.position)
         }
 
         this.lifetime = config.lifetime ?? 1
